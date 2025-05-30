@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! - Salahudeen Matine</title>
+    <link rel="icon" href="/path/to/your/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Specific styles for the thank you page */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            text-align: center;
+            background-color: var(--light-bg-color); /* Use your defined light background */
+            padding: 20px; /* Add some padding for small screens */
+        }
+
+        .thank-you-container {
+            background-color: var(--white-color);
+            padding: 60px 40px; /* Generous padding */
+            border-radius: 15px;
+            box-shadow: var(--shadow-medium); /* Prominent shadow */
+            max-width: 600px;
+            width: 100%; /* Ensure it takes full width on small screens */
+            margin-top: -80px; /* Pull it up slightly to center better below fixed header */
+        }
+
+        .thank-you-icon {
+            color: var(--primary-color);
+            font-size: 4rem; /* Large checkmark icon */
+            margin-bottom: 25px;
+        }
+
+        .thank-you-container h1 {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--dark-bg-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .thank-you-container p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .thank-you-buttons {
+            display: flex;
+            flex-direction: column; /* Stack buttons by default */
+            gap: 15px;
+            margin-top: 30px;
+            align-items: center; /* Center stacked buttons */
+        }
+
+        .thank-you-buttons .btn {
+            min-width: 200px; /* Ensure buttons are wide enough */
+        }
+
+        /* Responsive adjustments for thank you page */
+        @media (min-width: 576px) {
+            .thank-you-buttons {
+                flex-direction: row; /* Buttons side-by-side on wider screens */
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-container {
+                padding: 40px 25px;
+            }
+            .thank-you-icon {
+                font-size: 3rem;
+            }
+            .thank-you-container h1 {
+                font-size: 2.2rem;
+            }
+            .thank-you-container p {
+                font-size: 1rem;
+            }
+            .thank-you-buttons .btn {
+                width: 100%; /* Full width for very small screens */
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h1>Thank You!</h1>
+        <p>Your message has been successfully sent. I will get back to you as soon as possible!</p>
+        <div class="thank-you-buttons">
+            <a href="index.html#contact" class="btn btn-secondary">Send Another Message</a>
+            <a href="index.html" class="btn btn-primary">Back to Homepage</a>
+        </div>
+    </div>
+</body>
+</html>
